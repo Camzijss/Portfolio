@@ -1,34 +1,42 @@
 $(document).ready(function() { 
 
-    $("#body_container").css("display", "block");
-    $("#image_container").css("display", "none");
-    $("#form_content").css("display", "none");
+    $("#main_page").css("display", "block");
+    $("#work_page").css("display", "none");
+    $("#about_page").css("display", "none");
+    $("#contacts_page").css("display", "none");
 
-    $("#header").css("background", "black");
-    $("#header").css("width", "100%");
-    $("#header").css("height", "20%");
+    $(".navigācijas-poga").click(function() {
+        var text = $(this).text();
 
-    $("#body").css("background", "blue");
-    $("#body").css("width", "100%");
-    $("#body").css("height", "75%");
-    
-    $("#footer").css("background", "red");
-    $("#footer").css("width", "100%");
-    $("#footer").css("height", "5%");
+        if (text === "PAR MANI"){
+            $("#main_page").css("display", "none");
+            $("#work_page").css("display", "none");
+            $("#about_page").css("display", "block");
+            $("#contacts_page").css("display", "none");
+        }
 
-    $("#navigation_header").css("padding-top", "20px");
-    $("#navigation_header").css("padding-bottom", "20px");
+        if (text === "MAIKLS MĀRIS TRĒGERS"){
+            $("#main_page").css("display", "block");
+            $("#work_page").css("display", "none");
+            $("#about_page").css("display", "none");
+            $("#contacts_page").css("display", "none");
+        }
 
-    $("#body_content").css("background", "yellow");
+        if (text === "MANI DARBI"){
+            $("#main_page").css("display", "none");
+            $("#work_page").css("display", "block");
+            $("#about_page").css("display", "none");
+            $("#contacts_page").css("display", "none");
+        }
 
-    $("#personal_photo").css("height", "250px");
-    $("#personal_photo").css("width", "250px");
-    
-    $("#body_content").css("padding-top", "150px");
-    $(".magic-image").css("height", "350px")
-    $(".magic-image").css("width", "350px")
+        if (text === "KONTAKTI"){
+            $("#main_page").css("display", "none");
+            $("#work_page").css("display", "none");
+            $("#about_page").css("display", "none");
+            $("#contacts_page").css("display", "block");
+        }
 
-    $("#image_content").css("padding-top", "100px");
-    $("#form_content").css("padding-top", "100px");
+
+    });
 
 });

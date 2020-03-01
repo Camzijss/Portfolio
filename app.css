@@ -1,3 +1,59 @@
 body, html, #container {
     height: 100%;
 }
+
+#header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 17%;
+    padding-top: 1.5%;
+}
+
+#body {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 76%;
+}
+
+#footer {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 5%;
+}
+
+#navigation_header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#personal_photo {
+    height:250px;
+    width:250px;
+}
+#body_content {
+    padding-top: 150px;
+}
+.magic-image {
+    height: 350px;
+    width:350px;
+}
+#image_content {
+    padding-top: 100px;
+}
+#contacts_page {
+    padding-top: 100px;
+}
+h5 {
+    font-size: 10px;
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+    margin: 0;
+}
+#navigation_buttons {
+    padding: 200px;
+}
