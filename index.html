@@ -9,67 +9,86 @@
         <link href="libs\bootstrap.min.css" rel="stylesheet">
         <link href="app.css" rel="stylesheet">
         <script src="app.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
     </head>
-    <body>
+    <body id="main-body">
  
         <div id="header">
-            <div id="main" class="container">
+            <div id="main" class="container-fluid">
                 <div id="top" class="row">
-                    <h5 class="navigācijas-poga col-lg-12 text-left">MAIKLS MĀRIS TRĒGERS</h5>
-                    <h2 class="navigācijas-poga col-lg-12 text-left">PORTFOLIO</h2>
+                    <button class="home col-lg-12 text-left">
+                        <div id="MAIKLS">
+                            MAIKLS MĀRIS TRĒGERS
+                        </div>
+                        <div id="PORTFOLIO">PORTFOLIO</div>
+                    </button>
                 </div>
             </div>
         </div>
 
         <div id="body">
-
+            
             <div id="main_page" class="container">
                 <div id="navigation_buttons" class="row">
-                    <p class="navigācijas-poga col-sm-4 text-center">MANI DARBI</p>
-                    <p class="navigācijas-poga col-sm-4 text-center">PAR MANI</p>
-                    <p class="navigācijas-poga col-sm-4 text-center">KONTAKTI</p>
+                    <button class="work col-lg-4 text-center">MANI DARBI</button>
+                    <button class="mani col-lg-4 text-center">PAR MANI</button>
+                    <button class="kont col-lg-4 text-center">KONTAKTI</button>
                 </div>
             </div>
 
-            <div id="work_page" class="container">
-                <div id="work_page" class="row">
-                    <div class="col-sm-4">
-                        <img class="magic-image" src="http://25.media.tumblr.com/tumblr_m3yxaxsHN41qg73i1o1_1280.jpg" />
-                    </div>
-                    <div class="col-sm-4">
-                        <img class="magic-image" src="http://25.media.tumblr.com/tumblr_m3yxaxsHN41qg73i1o1_1280.jpg" />
-                    </div>
-                    <div class="col-sm-4">
-                        <img class="magic-image" src="http://25.media.tumblr.com/tumblr_m3yxaxsHN41qg73i1o1_1280.jpg" />
+            <div id="work_page" class="container-fluid">
+                <div id="work_page1" class="row middle">
+                    <div class="middle">
+                        <img class="magic-image" src="resources/darbi_1.png" />
+                        <img class="magic-image" src="resources/darbi_2.png" />
+                        <img class="magic-image" src="resources/darbi_3.png" /> 
                     </div>
                 </div>
             </div>
 
-            <div id="about_page" class="container">
-                <div id="about_page" class="row">
-                    <p class="col-sm-7">Skolnieks</p>
-                    <div class="col-sm-5">
-                        <img id="personal_photo" class="text-center" src="resources/blabla.jpg" />
+            <div id="about_page" class="container-fluid">
+                <div id="about_page1" class="row">
+                    <div class="column col-sm-7">
+                   <div class="col-sm-7">
+                        <i class="icon fas fa-graduation-cap"></i>
+                        <p>Siguldas 1. pamatskola. Siguldas pilsētas vidusskola</p>
                     </div>
+                    <div class="col-sm-7">
+                        <i class="icon fas fa-lightbulb"></i>
+                        <p>Esmu piedalījies 10.-12. klašu angļu valodas olimpiādē. Nodarbojos ar dažādām tehniskām un radošām nodarbēm.</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <i class="icon fas fa-users"></i>
+                        <p>Esmu aktīvs cilvēks. Piedalos dažādos sporta pasākumos.</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <i class="icon fas fa-ellipsis-h"></i>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="column col-sm-5">
+                    <img id="personal_photo" class="container-fluid text-center col-sm-5" src="resources/portrets.png" />
+                </div>
                 </div>
             </div>
 
             <div id="contacts_page" class="container">
-                <div id="contacts_page" class="row">
-                    <form class="col-sm-4 offset-sm-4">
-                        <div class="form-group row">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-                        <div class="form-group row">
-                            <label for="textarea">Question:</label>
-                            <input type="textarea" class="form-control" id="textarea" placeholder="Question">   
-                        </div>
-                        <div class="row">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
+                <div id="contacts_page1" class="row">
+                    <div class="middle">
+                        <a class="btn" href="https://www.facebook.com/maikls.tregers/">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn" href="https://twitter.com/Camzijss">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn" href="maikijs599@gmail.com">
+                          <i class="fab fa-google"></i>
+                        </a>
+                        <a class="btn" href="https://www.instagram.com/m.m.tregers/">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
